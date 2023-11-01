@@ -35,30 +35,7 @@ footer {
     margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
     text-align: center; }
 
-/* Estilos para el nav y enlaces de ul y li */
-nav {
-    background-color: #4caf50;
-    padding: 10px;
-   }
-   nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-   }
-   nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-   }
-   nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-   }
-   nav ul li a:hover {
-    background-color: #2f8247;
-   }
+
    img {
     display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
     margin: 0 auto; /* Centrar las imágenes horizontalmente */
@@ -66,20 +43,6 @@ nav {
     border: 3px solid #69bd45; /* Contorno de 3px con un color verde (#69bd45) alrededor de la img.*/
     border-radius: 10px; /* Borde redondeado de 10px para suavizar el contorno */
    }
-   /* Estilos para los iconos de redes sociales */
-.redes-sociales {
-    justify-content: center;
-    display: flex;
-    margin: 0 10px;
-    font-size: 24px;
-    color: #333;
-    text-decoration: none;
-    
-  }
-  .redes-sociales a {
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-  }
 
 .parrafo{
     color:black;

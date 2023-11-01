@@ -1,5 +1,5 @@
 <body class="gradient-custom">
-  <div id="carouselExample" class="carousel slide">
+  <div id="carouselExample" class="carousel slide mt-4">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="assets/img/img2.jpg" class="d-block w-100" alt="...">

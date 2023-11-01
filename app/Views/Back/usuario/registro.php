@@ -1,7 +1,7 @@
 <body class="gradient-custom">
 	<div class="container mt-0 mb-0">
 		<div class="card-header text-justify">
-			<div class="row d-flex justify-content-center">
+			<div class="row d-flex justify-content-center mt-3">
 				<div class="card col-lg-3" style="width: 50%;">
 				<center><h4>Registrarse</h4></center>
 

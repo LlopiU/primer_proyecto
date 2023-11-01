@@ -1,7 +1,7 @@
 <body class="gradient-custom">
 	<div class="gradient-custom">
 	<br><br>
-	<p class="parrafo">
+	<p class="lead">
 		En TecnoPanda, nos especializamos en ofrecer soluciones de hardware de alta calidad. Como líderes en el mercado,
 		estamos comprometidos con la excelencia en tecnología y servicio al cliente. Desde componentes esenciales hasta
 		dispositivos de última generación, estamos aquí para simplificar tus necesidades tecnológicas y brindarte

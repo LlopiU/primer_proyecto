@@ -7,7 +7,7 @@ $perfil = $session->get('perfil_id');
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container"> <!-- Agregamos un contenedor para centrar el contenido -->
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="inicio">
             <img src="<?php echo base_url('assets/img/icono.png')?>" alt="marca" width="75" height="30" class="img-fluid">
         </a>
 
@@ -17,50 +17,57 @@ $perfil = $session->get('perfil_id');
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ">
                 <?php if($perfil == 1):?>
                     <div class="btn btn-info active btnUser btn-sm">
                         <a href="">ADMIN: <?php echo $nombre;?></a>
                     </div>
                     <li class="nav-item">
-                        <a class="nav-link" href="registro" id="registro">Registrarse</a>
+                        <a class="nav-link" href="registro" id="registro">Registrar</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login" id="login">Login</a>
-                    </li>
-                    <li class="nav-item">
+
+                    <li class="nav-item ml-auto"">
                         <a class="nav-link" href="<?php echo base_url('/logout');?>" id="salir">Cerrar Sesión</a>
                     </li>
                 <?php elseif($perfil == 2):?>
                     <div class="btn btn-info active btnUser btn-sm">
                         <a href="">CLIENTE: <?php echo $nombre;?></a>
                     </div>
+
                     <li class="nav-item">
                         <a class="nav-link" href="inicio" id="enlace">Inicio</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="quienes_somos" id="enlace">Quiénes Somos</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="acerca_de" id="enlace">Acerca de</a>
                     </li>
-                    <li class="nav-item">
+                        
+                    <li class="nav-item ml-auto"">
                         <a class="nav-link" href="<?php echo base_url('/logout');?>" id="salir">Cerrar Sesión</a>
                     </li>
+
                 <?php else: ?>
                     <li class="nav-item">
                         <a class="nav-link" href="inicio" id="enlace">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="quienes_somos" id="enlace">Quiénes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="acerca_de" id="enlace">Acerca de</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="catalogo" id="enlace">Catálogo</a>
                     </li>
+
                     <li class="nav-item">
+                        <a class="nav-link" href="quienes_somos" id="enlace">Quiénes Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca_de" id="enlace">Acerca de</a>
+                    </li>
+                    
+                    <li class="nav-item ml-auto"">
                         <a class="nav-link" href="login">Login</a>
                     </li>
                 <?php endif; ?>

@@ -1,9 +1,9 @@
-﻿<footer class="bg-dark text-white mt-5 py-4">
+﻿<footer class="bg-dark text-white ">
         <h3 class="text-center">Redes Sociales</h3>
         <div class="d-flex justify-content-center">
-            <a href="https://www.instagram.com/" class="mr-3"><img src="assets/img/instagram.png" alt=""
+            <a href="https://www.instagram.com/" ><img src="assets/img/instagram.png" alt=""
                     width="50"></a>
-            <a href="https://www.facebook.com/" class="ml-3"><img src="assets/img/facebook.png" alt=""
+            <a href="https://www.facebook.com/" ><img src="assets/img/facebook.png" alt=""
                     width="50"></a>
         </div>
     </footer>
