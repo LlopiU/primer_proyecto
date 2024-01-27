@@ -29,7 +29,7 @@ class login_controller extends BaseController{
             $pass = $data['pass'];
             $ba = $data['baja'];
             if($ba == 'SI'){
-                $session->setFlashdata('msg','usuario dado de baja');
+                $session->setFlashdata('msg','Usuario dado de BAJA');
                 return redirect()->to('/login');
             }
 

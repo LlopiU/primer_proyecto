@@ -1,0 +1,92 @@
+ERROR - 2023-11-08 20:40:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`tecnopanda`.`productos`, CONSTRAINT `FK_Productos_Categoria` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id`)) in D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\app\Controllers\producto_controller.php(107): CodeIgniter\Model->update('4', Array)
+#8 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(919): App\Controllers\Producto_controller->guardarEdicion('4')
+#9 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#10 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-08 20:40:49 --> Cannot add or update a child row: a foreign key constraint fails (`tecnopanda`.`productos`, CONSTRAINT `FK_Productos_Categoria` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `nombre` = :nombre:, `marca` = :marca:, `cantidad` = :cantidad:, `descripcion` = :descripcion:, `id_categoria` = :id_categoria:, `precio` = :precio:
+WHERE `productos`.`id` IN :productos.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\producto_controller.php(107): CodeIgniter\Model->update('4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Producto_controller->guardarEdicion('4')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-08 20:42:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`tecnopanda`.`productos`, CONSTRAINT `FK_Productos_Categoria` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id`)) in D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\app\Controllers\producto_controller.php(107): CodeIgniter\Model->update('4', Array)
+#8 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(919): App\Controllers\Producto_controller->guardarEdicion('4')
+#9 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#10 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-08 20:42:38 --> Cannot add or update a child row: a foreign key constraint fails (`tecnopanda`.`productos`, CONSTRAINT `FK_Productos_Categoria` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `nombre` = :nombre:, `marca` = :marca:, `cantidad` = :cantidad:, `descripcion` = :descripcion:, `id_categoria` = :id_categoria:, `precio` = :precio:
+WHERE `productos`.`id` IN :productos.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\producto_controller.php(107): CodeIgniter\Model->update('4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Producto_controller->guardarEdicion('4')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 21:07:40 --> Undefined array key "id"
+in APPPATH\Views\Back\usuario\usuarios.php on line 32.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 32)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\usuario_controller.php(68): view('back/usuario/usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Usuario_controller->listaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-08 21:17:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`tecnopanda`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`perfil_id`) REFERENCES `perfiles` (`id_perfiles`)) in D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `usuario...', 0)
+#1 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\app\Controllers\usuario_controller.php(103): CodeIgniter\Model->update('11', Array)
+#8 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(919): App\Controllers\Usuario_controller->guardarEdicionU('11')
+#9 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#10 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Aplicaciones\Xammp\htdocs\primer_proyecto\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-08 21:17:01 --> Cannot add or update a child row: a foreign key constraint fails (`tecnopanda`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`perfil_id`) REFERENCES `perfiles` (`id_perfiles`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `usuarios` SET `nombre` = :nombre:, `apellido` = :apellido:, `email` = :email:, `perfil_id` = :perfil_id:
+WHERE `usuarios`.`id_usuario` IN :usuarios.id_usuario:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\usuario_controller.php(103): CodeIgniter\Model->update('11', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Usuario_controller->guardarEdicionU('11')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

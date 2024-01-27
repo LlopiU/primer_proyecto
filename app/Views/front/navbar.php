@@ -19,23 +19,33 @@ $perfil = $session->get('perfil_id');
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ">
                 <?php if($perfil == 1):?>
-                    <div class="btn btn-info active btnUser btn-sm">
-                        <a href="">ADMIN: <?php echo $nombre;?></a>
+                    <div class="active btnUser btn-sm">
+                        <a class="btn btn-success" href="">ADMIN: <?php echo $nombre;?></a>
                     </div>
                     <li class="nav-item">
+                        <a class="nav-link" href="usuarios" id="registro">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="registro" id="registro">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos" id="registro">Productos</a>
                     </li>
 
                     <li class="nav-item ml-auto"">
                         <a class="nav-link" href="<?php echo base_url('/logout');?>" id="salir">Cerrar Sesión</a>
                     </li>
                 <?php elseif($perfil == 2):?>
-                    <div class="btn btn-info active btnUser btn-sm">
-                        <a href="">CLIENTE: <?php echo $nombre;?></a>
+                    <div class="active btnUser btn-sm">
+                        <a class="btn btn-info" href="">CLIENTE: <?php echo $nombre;?></a>
                     </div>
 
                     <li class="nav-item">
                         <a class="nav-link" href="inicio" id="enlace">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo" id="enlace">Catálogo</a>
                     </li>
 
                     <li class="nav-item">

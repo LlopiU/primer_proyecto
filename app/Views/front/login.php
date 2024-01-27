@@ -3,7 +3,7 @@
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
             <?php if(session()->getFlashdata('msg')):?>
-				<div class="alert alert-warning">
+				<div class="alert alert-primary" role="alert">
 					<?= session()->getFlashdata('msg')?>
 				</div>
 				<?php endif;?>

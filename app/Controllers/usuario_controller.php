@@ -25,6 +25,7 @@ class Usuario_controller extends Controller{
             'pass' => 'required|min_length[3]|max_length[10]'
         ],
     );
+
     $formModel = new usuario_Model();
 
     if (!$input){
@@ -46,4 +47,63 @@ class Usuario_controller extends Controller{
         return redirect()->to(base_url('/registro'));
     }
     }
+    public function darDeBaja($id) {
+        $formModel = new usuario_Model();
+        $formModel->update($id, ['baja' => 'SI']); // Establece el valor 'SI' en la columna 'baja' para dar de baja al usuario
+        return redirect()->to(base_url('/usuarios')); // Redirige a la página de lista de usuarios
+    }
+    
+    public function darDeAlta($id) {
+        $formModel = new usuario_Model();
+        $formModel->update($id, ['baja' => 'NO']); // Establece el valor 'NO' en la columna 'baja' para dar de alta al usuario
+        return redirect()->to(base_url('/usuarios')); // Redirige a la página de lista de usuarios
+    }
+    public function listaUsuario(){
+        $fromModel = new usuario_Model();
+
+        $data ['usuarios'] = $fromModel-> findAll();
+        $data['titulo']='usuarios';
+        echo view('front/header',$data);
+        echo view('front/navbar');
+        echo view('back/usuario/usuarios',$data);
+        echo view('front/footer');
+
+    }
+    
+    public function editarUsuario($id) {
+        $formModel = new usuario_Model();
+        
+        // Buscar el producto por su ID
+        $usuario = $formModel->find($id);
+    
+        if ($usuario) {
+            $data['titulo'] = 'Editar Usuario';
+            echo view('front/header', $data);
+            echo view('front/navbar');
+            echo view('back/usuario/editar_usuario', ['usuario' => $usuario]);
+            echo view('front/footer');
+        } else {
+            // Manejar el caso en el que el producto no se encuentra
+            echo "Usuario no encontrado.";
+        }
+    }
+
+    public function guardarEdicionU($id) {
+        $formModel = new usuario_Model();
+        
+        $data = [
+            'id' => $this->request->getPost('id'),
+            'nombre' => $this->request->getPost('nombre'),
+            'apellido' => $this->request->getPost('apellido'),
+            'email' => $this->request->getPost('email'),
+            'perfil_id' => $this->request->getPost('perfil_id'),
+            
+        ];
+    
+        $formModel->update($id, $data);
+    
+        session()->setFlashdata('success', 'Usuario actualizado con éxito');
+        return redirect()->to(base_url('/usuarios')); // Redirigir a la página de lista de productos
+    }
+
 }

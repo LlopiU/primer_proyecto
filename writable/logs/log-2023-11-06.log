@@ -1,0 +1,97 @@
+CRITICAL - 2023-11-06 19:08:23 --> php_network_getaddresses: getaddrinfo for nombre_del_servidor failed: Host desconocido. 
+in APPPATH\Views\Back\usuario\usuarios.php on line 16.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(16): mysqli->__construct('nombre_del_servidor', 'usuario', Object(SensitiveParameterValue), 'tecnopanda')
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/usuarios')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:17:05 --> Undefined variable $usuarios
+in APPPATH\Views\Back\usuario\usuarios.php on line 14.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/usuarios')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:24:27 --> Undefined variable $usuarios
+in APPPATH\Views\Back\usuario\usuarios.php on line 14.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/usuarios')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:24:36 --> Undefined variable $usuarios
+in APPPATH\Views\Back\usuario\usuarios.php on line 14.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/usuarios')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:30:58 --> Undefined variable $usuarios
+in APPPATH\Views\Back\usuario\usuarios.php on line 14.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\usuario_controller.php(68): view('back/usuario/usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Usuario_controller->listaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:31:04 --> Undefined variable $usuarios
+in APPPATH\Views\Back\usuario\usuarios.php on line 14.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\usuario_controller.php(68): view('back/usuario/usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Usuario_controller->listaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:31:42 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\Back\usuario\usuarios.php on line 30.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 3 APPPATH\Controllers\usuario_controller.php(68): view('back/usuario/usuarios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Usuario_controller->listaUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:31:58 --> Undefined variable $usuario
+in APPPATH\Views\Back\usuario\usuarios.php on line 16.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\usuario_controller.php(68): view('back/usuario/usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Usuario_controller->listaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:34:48 --> Undefined array key "id"
+in APPPATH\Views\Back\usuario\usuarios.php on line 16.
+ 1 APPPATH\Views\Back\usuario\usuarios.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Aplicaciones\\Xammp\\htdocs\\primer_proyecto\\app\\Views\\Back\\usuario\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('back/usuario/usuarios', [], true)
+ 5 APPPATH\Controllers\usuario_controller.php(68): view('back/usuario/usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Usuario_controller->listaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

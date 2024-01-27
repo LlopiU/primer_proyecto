@@ -58,4 +58,13 @@ class Home extends BaseController
         echo view('back/usuario/registro');
         echo view('front/footer');
     }
+
+    public function usuarios()
+    {
+        $data['titulo']='Usuarios';
+        echo view('front/header',$data);
+        echo view('front/navbar');
+        echo view('back/usuario/usuarios');
+        echo view('front/footer');
+    }
 }
